@@ -473,8 +473,8 @@ $(function() {
     </div>-->
 
         <div class="header_section">
-        <h1> HEART ATTACKS PREDICTION</h1>
-        <h2>Risk prediction by machine learning</h2>
+        <h1> PREDICCIÓN DE ATAQUE CARDÍACO</h1>
+        <h2>Predicción de riesgo mediante aprendizaje automático</h2>
     </div>
 
     <div class="row">
@@ -482,30 +482,30 @@ $(function() {
         <div class="main">
 
             <div class="table_part">
-                <h1>Fill the Values:</h1>
+                <h1>Llenar los valores:</h1>
                 <form>
                     <table class="formtable">
                         <tr>
-                            <th>LABELS</th>
-                            <th>VALUES</th>
+                            <th>CAMPO</th>
+                            <th>VALORES</th>
                         </tr>
 
                         <tr>
-                            <td><i class="fa fa-calendar" style="color: black;"></i> Age</td>
-                            <td><input type="text" id="VALUE1" style="width: 100%;"; placeholder="16 - 115 years"></td>
+                            <td><i class="fa fa-calendar" style="color: black;"></i> Edad</td>
+                            <td><input type="text" id="VALUE1" style="width: 100%;"; placeholder="16 - 115 años"></td>
                         </tr>
 
                         <tr>
-                            <td><i class="fa fa-venus-mars" style="color: black;"></i> Gender</td>
+                            <td><i class="fa fa-venus-mars" style="color: black;"></i> Género</td>
                             <td>
                                 <input type="radio" id="gender1" name="gender" value="Female">
-                                <label for="gender1">Female</label><br>
+                                <label for="gender1">Femenino</label><br>
                                 <input type="radio" id="gender2" name="gender" value="Male">
-                                <label for="gender2">Male</label><br></td>
+                                <label for="gender2">Masculino</label><br></td>
                         </tr>
 
                         <tr>
-                            <td><i class="fa fa-street-view" style="color: black;"></i> Resting blood pressure (mmHg)</td>
+                            <td><i class="fa fa-street-view" style="color: black;"></i> Presión arterial en reposo (mmHg)</td>
                             <td><input type="text" id="VALUE3" style="width: 100%"; placeholder="60 - 200 mmHg"></td>
 
                         </tr>
@@ -515,63 +515,63 @@ $(function() {
                             <td><input type="text" id="VALUE4" style="width: 100%"; placeholder="125 - 400 mg/dL "></td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-tint" style="color: red;"></i> Fasting blood sugar is > 120(mg/dL)</td>
+                            <td><i class="fa fa-tint" style="color: red;"></i> El azúcar en sangre en ayunas es > 120(mg/dL)</td>
                             <td>
                                 <input type="radio" id="bloodsugar1" name="fbs" value="Yes">
-                                <label for="bloodsugar1">Yes</label><br>
+                                <label for="bloodsugar1">Si</label><br>
                                 <input type="radio" id="bloodsugar2" name="fbs" value="No">
                                 <label for="bloodsugar2">No</label><br></td>
                         </tr>
 
 
                         <tr>
-                            <td><i class="fa fa-heart" style="color: red;"></i> Exercise-induced ST depression [difference in relation to rest (mm)]</td>
+                            <td><i class="fa fa-heart" style="color: red;"></i> Depresión del ST inducida por el ejercicio [diferencia en relación con el reposo (mm)]</td>
                             <td><input type="text" id="VALUE6" style="width: 100%"; placeholder="0 - 2 mm"></td>
                         </tr>
 
                         <tr>
-                            <td><i class="fa fa-user-md" style="color: black;"></i> Angina induced by exercise</td>
+                            <td><i class="fa fa-user-md" style="color: black;"></i> Angina inducida por ejercicio</td>
                             <td>
                                 <input type="radio" id="True_angina" name="angina" value="Yes">
-                                <label for="True_angina">Yes</label><br>
+                                <label for="True_angina">Si</label><br>
                                 <input type="radio" id="False_angina" name="angina" value="No">
                                 <label for="False_angina">No</label><br></td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-stethoscope" style="color: black;"></i> Maximum heart rate achieved (bpm)</td>
+                            <td><i class="fa fa-stethoscope" style="color: black;"></i> Frecuencia cardíaca máxima alcanzada (bpm)</td>
                             <td><input type="text" id="VALUE7" style="width: 100%"; placeholder="80 - 220 bpm"></td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-heartbeat" style="color: red;"></i> Resting ECG results</td>
+                            <td><i class="fa fa-heartbeat" style="color: red;"></i> Resultados de ECG en reposo</td>
                             <td>
                                 <input type="radio" id="ECG_0" name="ECG" value="Normal">
                                 <label for="ECG_0">Normal</label><br>
                                 <input type="radio" id="ECG_1" name="ECG" value="ST Abnormality">
-                                <label for="ECG_1">ST wave abnormality</label><br>
+                                <label for="ECG_1">Anormalidad de la onda ST</label><br>
                                 <input type="radio" id="ECG_2" name="ECG" value="Ventricular hypertrophy">
-                                <label for="ECG_2">Left ventricular hypertrophy</label><br></td>
+                                <label for="ECG_2">Hipertrofia del ventrículo izquierdo</label><br></td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-ambulance" style="color: black;"></i> Chest pain </td>
+                            <td><i class="fa fa-ambulance" style="color: black;"></i> Dolor de pecho </td>
                             <td>
                                 <input type="radio" id="CP_1" name="CP" value="Typical Angina">
-                                <label for="CP_1">Typical Angina</label><br>
-                                <input type="radio" id="CP_2" name="CP" value="Atypical Angina">
-                                <label for="CP_2">Atypical angina</label><br>
+                                <label for="CP_1">Angina típica</label><br>
+                                <input type="radio" id="CP_2" name="CP" value="Atypical angina">
+                                <label for="CP_2">Angina atípica</label><br>
                                 <input type="radio" id="CP_3" name="CP" value="Non-anginal pain">
-                                <label for="CP_3">Non-anginal pain</label><br>
+                                <label for="CP_3">Dolor no anginoso</label><br>
                                 <input type="radio" id="CP_4" name="CP" value="Asymptomatic">
-                                <label for="CP_4">No chest pain</label><br></td>
+                                <label for="CP_4">Sin dolor de pecho</label><br></td>
                         </tr>
                         <tr class="noMargin"> <td colspan="2" class="noMargin" style="border-collapse: collapse; border: none;">
                             <input type="button" onclick="displayResults()"
-                            value="SUBMIT :)" class="button"><br/>
+                            value="Submitir :)" class="button"><br/>
                             </td>
                         </tr>
 
                          <tr class="noMargin"> <td colspan="2" class="noMargin" style="border-collapse: collapse; border: none;">
                                         <div class="RESULT_SECTION">
-                <h1>Risk Percentile:</h1>
+                <h1>Riesgo porcentual:</h1>
                 <div id="result_text">
                     <p id="result"> </p> <!--value you enter -->
                     <p id="risk_score_section"><div id="heart_div" class="heart">&#x2665;</div></p>
